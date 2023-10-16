@@ -32,7 +32,12 @@ func ReadArgs() (int, int) {
 	var y, d int
 	var yearErr, dayErr error
 
-	if len(args) == 3 {
+	fmt.Println(args)
+
+	if len(args) == 4 && args[1] == "create" {
+		CreateFromTemplate(args[2], args[3])
+		os.Exit(0)
+	} else if len(args) == 3 {
 		y, yearErr = strconv.Atoi(args[1])
 		d, dayErr = strconv.Atoi(args[2])
 	} else {
@@ -49,6 +54,81 @@ func ReadArgs() (int, int) {
 
 	color.Printf("\n<suc>Running day</> <comment>%02d</> <suc>from year</> <comment>%02d</>\n", d, y)
 	return y, d
+}
+
+func CreateFromTemplate(year string, day string) {
+	y, yearErr := strconv.Atoi(year)
+	d, dayErr := strconv.Atoi(day)
+
+	if yearErr != nil {
+		fmt.Println("Please enter a valid year: 2015 - 2022")
+	}
+	if dayErr != nil {
+		fmt.Println("Please enter a valid day: 1 - 25")
+	}
+
+	f, err := os.Create(fmt.Sprintf("y%04d/day%02d.go", y, d))
+	Panic(err)
+	defer f.Close()
+	f.WriteString(fmt.Sprintf(`package y%04d
+
+import (
+	"fmt"
+	"github.com/teodorpopa/advent-of-code-go/utils"
+)
+
+func Day%02dFirst(input string) int {
+	return 0
+}
+
+func Day%02dSecond(input string) int {
+	return 0
+}
+
+func Day%02d() {
+	fmt.Println(utils.DAY_PREFIX, "Day %02d")
+	fmt.Println(utils.PART_PREFIX, "Part 1:", Day01First(utils.ReadFile("y%04d/input/day%02d.txt")))
+	fmt.Println(utils.PART_PREFIX, "Part 2:", Day01Second(utils.ReadFile("y%04d/input/day%02d.txt")))
+}
+`, y, d, d, d, d, y, d, y, d))
+	color.Printf("\n<suc>Wrote day</> <comment>y%04d/day%02d.go</>\n", y, d)
+
+	f, err = os.Create(fmt.Sprintf("y%04d/day%02d_test.go", y, d))
+	Panic(err)
+	defer f.Close()
+	f.WriteString(fmt.Sprintf(`package y%04d
+
+import (
+	"github.com/stretchr/testify/assert"
+	"github.com/teodorpopa/advent-of-code-go/utils"
+	"testing"
+)
+
+func TestDay%02dFirst(t *testing.T) {
+	r := Day%02dFirst(utils.ReadFile("test_input/day%02d.txt"))
+	assert.Equal(t, r, 0)
+}
+
+func TestDay%02dSecond(t *testing.T) {
+	r := Day%02dSecond(utils.ReadFile("test_input/day%02d.txt"))
+	assert.Equal(t, r, 0)
+}
+`, y, d, d, d, d, d, d))
+	color.Printf("\n<suc>Wrote day</> <comment>y%04d/day%02d_test.go</>\n", y, d)
+
+	f, err = os.Create(fmt.Sprintf("y%04d/input/day%02d.txt", y, d))
+	color.Printf("\n<suc>Wrote day</> <comment>y%04d/input/day%02d.txt</>\n", y, d)
+	Panic(err)
+
+	f, err = os.Create(fmt.Sprintf("y%04d/test_input/day%02d.txt", y, d))
+	color.Printf("\n<suc>Wrote day</> <comment>y%04d/test_input/day%02d.txt</>\n", y, d)
+	Panic(err)
+}
+
+func Panic(err error) {
+	if err != nil {
+		panic(err)
+	}
 }
 
 func ReadInt(label string) (int, error) {
