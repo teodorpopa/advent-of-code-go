@@ -80,10 +80,10 @@ func Day%02dSecond(input string) int {
 
 func Day%02d() {
 	fmt.Println(utils.DAY_PREFIX, "Day %02d")
-	fmt.Println(utils.PART_PREFIX, "Part 1:", Day01First(utils.ReadFile("y%04d/input/day%02d.txt")))
-	fmt.Println(utils.PART_PREFIX, "Part 2:", Day01Second(utils.ReadFile("y%04d/input/day%02d.txt")))
+	fmt.Println(utils.PART_PREFIX, "Part 1:", Day%02dFirst(utils.ReadFile("y%04d/input/day%02d.txt")))
+	fmt.Println(utils.PART_PREFIX, "Part 2:", Day%02dSecond(utils.ReadFile("y%04d/input/day%02d.txt")))
 }
-`, y, d, d, d, d, y, d, y, d))
+`, y, d, d, d, d, d, y, d, d, y, d))
 	color.Printf("\n<suc>Wrote day</> <comment>y%04d/day%02d.go</>\n", y, d)
 
 	f, err = os.Create(fmt.Sprintf("y%04d/day%02d_test.go", y, d))
