@@ -36,7 +36,13 @@ test/cover:
 	go test -v -coverprofile=/tmp/coverage.out ./...
 	go tool cover -html=/tmp/coverage.out
 
-## build: run the application
+## run: run the application
 .PHONY: run
 run:
 	@go run main.go $(year) $(day)
+
+
+## create: create a day from template
+.PHONY: create
+create:
+	@go run main.go create $(year) $(day)

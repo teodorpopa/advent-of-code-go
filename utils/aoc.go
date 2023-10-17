@@ -32,11 +32,9 @@ func ReadArgs() (int, int) {
 	var y, d int
 	var yearErr, dayErr error
 
-	fmt.Println(args)
-
-	if len(args) == 4 && args[1] == "create" {
-		CreateFromTemplate(args[2], args[3])
-		os.Exit(0)
+	if len(args) == 4 {
+		y, yearErr = strconv.Atoi(args[2])
+		d, dayErr = strconv.Atoi(args[3])
 	} else if len(args) == 3 {
 		y, yearErr = strconv.Atoi(args[1])
 		d, dayErr = strconv.Atoi(args[2])
@@ -52,21 +50,16 @@ func ReadArgs() (int, int) {
 		fmt.Println("Please enter a valid day: 1 - 25")
 	}
 
+	if args[1] == "create" {
+		CreateFromTemplate(y, d)
+		os.Exit(0)
+	}
+
 	color.Printf("\n<suc>Running day</> <comment>%02d</> <suc>from year</> <comment>%02d</>\n", d, y)
 	return y, d
 }
 
-func CreateFromTemplate(year string, day string) {
-	y, yearErr := strconv.Atoi(year)
-	d, dayErr := strconv.Atoi(day)
-
-	if yearErr != nil {
-		fmt.Println("Please enter a valid year: 2015 - 2022")
-	}
-	if dayErr != nil {
-		fmt.Println("Please enter a valid day: 1 - 25")
-	}
-
+func CreateFromTemplate(y int, d int) {
 	f, err := os.Create(fmt.Sprintf("y%04d/day%02d.go", y, d))
 	Panic(err)
 	defer f.Close()
