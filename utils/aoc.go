@@ -50,7 +50,7 @@ func ReadArgs() (int, int) {
 		fmt.Println("Please enter a valid day: 1 - 25")
 	}
 
-	if args[1] == "create" {
+	if len(args) > 1 && args[1] == "create" {
 		CreateFromTemplate(y, d)
 		os.Exit(0)
 	}
