@@ -8,4 +8,8 @@ Or using command args:
 
 ![interactive](https://github.com/teodorpopa/advent-of-code-go/blob/main/assets/args.png?raw=true)
 
-To run tests recursive: ```go test ./... -v```
+To run tests recursive: ```make test```
+
+To create a new day from scaffolding:
+
+![create](https://github.com/teodorpopa/advent-of-code-go/blob/main/assets/create.png?raw=true)
