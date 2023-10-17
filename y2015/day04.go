@@ -9,8 +9,6 @@ import (
 	"strings"
 )
 
-const secret = "yzbqklnj"
-
 func md5string(text string) string {
 	hash := md5.Sum([]byte(text))
 	return hex.EncodeToString(hash[:])
@@ -24,7 +22,7 @@ func Day04First(input string) int {
 
 	i := 0
 	for {
-		string := secret + strconv.Itoa(i)
+		string := input + strconv.Itoa(i)
 		hash := md5string(string)
 
 		if checkString(hash, "00000") {
@@ -41,7 +39,7 @@ func Day04Second(input string) int {
 
 	i := 0
 	for {
-		string := secret + strconv.Itoa(i)
+		string := input + strconv.Itoa(i)
 		hash := md5string(string)
 
 		if checkString(hash, "000000") {

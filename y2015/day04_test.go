@@ -8,10 +8,10 @@ import (
 
 func TestDay04First(t *testing.T) {
 	r := Day04First(utils.ReadFile("test_input/day04.txt"))
-	assert.Equal(t, r, 609043)
+	assert.Equal(t, r, 282749)
 }
 
 func TestDay04Second(t *testing.T) {
 	r := Day04Second(utils.ReadFile("test_input/day04.txt"))
-	assert.Equal(t, r, 0)
+	assert.Equal(t, r, 9962624)
 }
