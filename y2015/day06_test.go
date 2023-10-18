@@ -13,5 +13,5 @@ func TestDay06First(t *testing.T) {
 
 func TestDay06Second(t *testing.T) {
 	r := Day06Second(utils.ReadFile("test_input/day06.txt"))
-	assert.Equal(t, r, 0)
+	assert.Equal(t, r, 1000000)
 }
