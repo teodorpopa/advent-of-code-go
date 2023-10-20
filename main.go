@@ -36,6 +36,8 @@ func main() {
 			y2015.Day09()
 		case 10:
 			y2015.Day10()
+		case 11:
+			y2015.Day11()
 		default:
 			color.Error.Println("Invalid day")
 		}
