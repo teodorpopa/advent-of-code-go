@@ -26,6 +26,11 @@ func ToInt(i string) int {
 	return v
 }
 
+func ToString(s int) string {
+	v := strconv.Itoa(s)
+	return v
+}
+
 func ReadArgs() (int, int) {
 	args := os.Args
 

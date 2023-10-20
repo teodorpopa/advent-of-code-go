@@ -15,6 +15,7 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 - Day 9: All in a Single Night [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day09.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day09_test.go) ]
 - Day 10: Elves Look, Elves Say [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day10.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day10_test.go) ]
 - Day 11: Corporate Policy [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day11.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day11_test.go) ]
+- Day 12: JSAbacusFramework.io [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day12.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day12_test.go) ]
 
 
 ### How to run this:
