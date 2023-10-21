@@ -17,6 +17,7 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 - Day 11: Corporate Policy [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day11.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day11_test.go) ]
 - Day 12: JSAbacusFramework.io [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day12.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day12_test.go) ]
 - Day 13: Knights of the Dinner Table [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day13.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day13_test.go) ]
+- Day 14: Reindeer Olympics [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day14.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day14_test.go) ]
 
 
 ### How to run this:
