@@ -40,34 +40,6 @@ func getDestinations(dest []string) ([]destination, []city) {
 	return destinations, cities
 }
 
-func permutations(arr []city) [][]city {
-	var helper func([]city, int)
-	var res [][]city
-
-	helper = func(arr []city, n int) {
-		if n == 1 {
-			tmp := make([]city, len(arr))
-			copy(tmp, arr)
-			res = append(res, tmp)
-		} else {
-			for i := 0; i < n; i++ {
-				helper(arr, n-1)
-				if n%2 == 1 {
-					tmp := arr[i]
-					arr[i] = arr[n-1]
-					arr[n-1] = tmp
-				} else {
-					tmp := arr[0]
-					arr[0] = arr[n-1]
-					arr[n-1] = tmp
-				}
-			}
-		}
-	}
-	helper(arr, len(arr))
-	return res
-}
-
 func getDistance(destinations []destination, from city, to city) int {
 	for _, v := range destinations {
 		if v.from == from && v.to == to {
@@ -85,7 +57,11 @@ func Day09First(input string) int {
 	lines := utils.ReadLines(input)
 	destinations, cities := getDestinations(lines)
 
-	permutations := permutations(cities)
+	s := make([]interface{}, len(cities))
+	for i, v := range cities {
+		s[i] = v
+	}
+	permutations := utils.Permutations(s)
 
 	for _, cities := range permutations {
 		curDist := 0
@@ -93,9 +69,9 @@ func Day09First(input string) int {
 
 		for i := 1; i < len(cities); i++ {
 			if i == 1 {
-				from = cities[0]
+				from = cities[0].(city)
 			}
-			to := cities[i]
+			to := cities[i].(city)
 			curDist += getDistance(destinations, from, to)
 			from = to
 		}
@@ -113,7 +89,11 @@ func Day09Second(input string) int {
 	lines := utils.ReadLines(input)
 	destinations, cities := getDestinations(lines)
 
-	permutations := permutations(cities)
+	s := make([]interface{}, len(cities))
+	for i, v := range cities {
+		s[i] = v
+	}
+	permutations := utils.Permutations(s)
 
 	for _, cities := range permutations {
 		curDist := 0
@@ -121,9 +101,9 @@ func Day09Second(input string) int {
 
 		for i := 1; i < len(cities); i++ {
 			if i == 1 {
-				from = cities[0]
+				from = cities[0].(city)
 			}
-			to := cities[i]
+			to := cities[i].(city)
 			curDist += getDistance(destinations, from, to)
 			from = to
 		}
