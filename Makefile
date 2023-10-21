@@ -1,6 +1,7 @@
 # ==================================================================================== #
 # HELPERS
 # ==================================================================================== #
+.SILENT:
 
 ## help: print this help message
 .PHONY: help
@@ -25,10 +26,17 @@ audit:
 	go vet ./...
 	go test -vet=off ./...
 
-## test: run all tests
+## test: run tests
 .PHONY: test
 test:
+ifdef year
+ifdef day
+	go test -v github.com/teodorpopa/advent-of-code-go/y$(year) -run TestDay$(day)First
+	go test -v github.com/teodorpopa/advent-of-code-go/y$(year) -run TestDay$(day)Second
+else
 	go test -v ./...
+endif
+endif
 
 ## test/cover: run all tests and display coverage
 .PHONY: test/cover
