@@ -132,12 +132,12 @@ import (
 
 func TestDay%02dFirst(t *testing.T) {
 	r := Day%02dFirst(utils.ReadFile("test_input/day%02d.txt"))
-	assert.Equal(t, r, 0)
+	assert.Equal(t, 0, r)
 }
 
 func TestDay%02dSecond(t *testing.T) {
 	r := Day%02dSecond(utils.ReadFile("test_input/day%02d.txt"))
-	assert.Equal(t, r, 0)
+	assert.Equal(t, 0, r)
 }
 `, y, d, d, d, d, d, d))
 	color.Printf("\n<suc>Wrote day</> <comment>y%04d/day%02d_test.go</>\n", y, d)
