@@ -23,6 +23,9 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 ### 2023:
 
 - Day 1: Trebuchet?! [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day01.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day01_test.go) ]
+- Day 2: Cube Conundrum [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day02.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day02_test.go) ]
+- Day 3: Gear Ratios [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day03.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day03_test.go) ]
+- Day 4: Scratchcards [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day04.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day04_test.go) ]
 
 ### How to run this:
 

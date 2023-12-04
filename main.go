@@ -52,6 +52,8 @@ func main() {
 		switch d {
 		case 1:
 			y2023.Day01()
+		case 4:
+			y2023.Day04()
 		}
 	default:
 		color.Error.Println("Invalid year")
