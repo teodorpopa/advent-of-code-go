@@ -54,6 +54,8 @@ func main() {
 			y2023.Day01()
 		case 2:
 			y2023.Day02()
+		case 3:
+			y2023.Day03()
 		case 4:
 			y2023.Day04()
 		}
