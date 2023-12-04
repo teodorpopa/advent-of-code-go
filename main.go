@@ -4,6 +4,7 @@ import (
 	"github.com/gookit/color"
 	"github.com/teodorpopa/advent-of-code-go/utils"
 	"github.com/teodorpopa/advent-of-code-go/y2015"
+	"github.com/teodorpopa/advent-of-code-go/y2023"
 )
 
 const title = "   GO Advent of Code   "
@@ -46,6 +47,11 @@ func main() {
 			y2015.Day14()
 		default:
 			color.Error.Println("Invalid day")
+		}
+	case 2023:
+		switch d {
+		case 1:
+			y2023.Day01()
 		}
 	default:
 		color.Error.Println("Invalid year")
