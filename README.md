@@ -20,6 +20,10 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 - Day 14: Reindeer Olympics [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day14.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day14_test.go) ]
 
 
+### 2023:
+
+- Day 1: Trebuchet?! [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day01.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day01_test.go) ]
+
 ### How to run this:
 
 You can run this in interactive mode:
