@@ -58,6 +58,10 @@ func main() {
 			y2023.Day03()
 		case 4:
 			y2023.Day04()
+		case 5:
+			y2023.Day05()
+		case 6:
+			y2023.Day06()
 		}
 	default:
 		color.Error.Println("Invalid year")

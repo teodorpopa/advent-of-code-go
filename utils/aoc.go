@@ -10,7 +10,7 @@ import (
 )
 
 const DAY_PREFIX = "  -"
-const PART_PREFIX = "      "
+const PART_PREFIX = "\t"
 
 func ReadFile(path string) string {
 	buf, _ := os.ReadFile(path)
