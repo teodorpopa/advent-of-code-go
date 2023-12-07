@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/gookit/color"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -29,6 +30,24 @@ func ToInt(i string) int {
 func ToString(s int) string {
 	v := strconv.Itoa(s)
 	return v
+}
+
+func SortString(s string) string {
+	chars := []rune(s)
+	sort.Slice(chars, func(i, j int) bool { //sort the string using the function
+		return chars[i] < chars[j]
+	})
+
+	return string(chars)
+}
+
+func SortStringReverse(s string) string {
+	chars := []rune(s)
+	sort.Slice(chars, func(i, j int) bool { //sort the string using the function
+		return chars[i] > chars[j]
+	})
+
+	return string(chars)
 }
 
 func Permutations(arr []interface{}) [][]interface{} {

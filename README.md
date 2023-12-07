@@ -28,6 +28,7 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 - Day 4: Scratchcards [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day04.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day04_test.go) ]
 - Day 5: If You Give A Seed A Fertilizer [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day05.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day05_test.go) ]
 - Day 6: Wait For It [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day06.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day06_test.go) ]
+- Day 7: Camel Cards [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07_test.go) ]
 
 ### How to run this:
 
