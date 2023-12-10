@@ -30,6 +30,7 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 - Day 6: Wait For It [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day06.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day06_test.go) ]
 - Day 7: Camel Cards [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07_test.go) ]
 - Day 8: Haunted Wasteland [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day08.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day08_test.go) ]
+- Day 9: Mirage Maintenance [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09_test.go) ]
 
 ### How to run this:
 
