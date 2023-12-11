@@ -31,6 +31,7 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 - Day 7: Camel Cards [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07_test.go) ]
 - Day 8: Haunted Wasteland [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day08.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day08_test.go) ]
 - Day 9: Mirage Maintenance [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09_test.go) ]
+- Day 10: Pipe Maze [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day10.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day10_test.go) ]
 
 ### How to run this:
 
