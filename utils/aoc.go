@@ -50,6 +50,28 @@ func SortStringReverse(s string) string {
 	return string(chars)
 }
 
+func ToIntSlice(s []string) []int {
+	var res []int
+	for _, v := range s {
+		res = append(res, ToInt(v))
+	}
+	return res
+}
+
+func Max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func Min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
 func Permutations(arr []interface{}) [][]interface{} {
 	var helper func([]interface{}, int)
 	var res [][]interface{}
