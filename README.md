@@ -33,6 +33,8 @@ Resolving all [Advent of Code](https://adventofcode.com/) problems.
 - Day 9: Mirage Maintenance [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09_test.go) ]
 - Day 10: Pipe Maze [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day10.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day10_test.go) ]
 - Day 11: Cosmic Expansion [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day11.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day11_test.go) ]
+- Day 12: Hot Springs [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day12.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day12_test.go) ]
+- Day 13: Point of Incidence [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day13.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day13_test.go) ]
 
 ### How to run this:
 
