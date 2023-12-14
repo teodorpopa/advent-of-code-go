@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestDay11First(t *testing.T) {
+func TestDayPart1(t *testing.T) {
 	r := part1(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, r, "abcdffaa")
 }
 
-func TestDay11Second(t *testing.T) {
+func TestDayPart2(t *testing.T) {
 	r := part2(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, r, "abcdffbb")
 }

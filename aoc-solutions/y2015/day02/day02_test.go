@@ -9,12 +9,12 @@ import (
 const d2_1 = 101
 const d2_2 = 48
 
-func TestDay02First(t *testing.T) {
+func TestDayPart1(t *testing.T) {
 	r := part1(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, r, d2_1)
 }
 
-func TestDay02Second(t *testing.T) {
+func TestDayPart2(t *testing.T) {
 	r := part2(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, r, d2_2)
 }
