@@ -1,53 +1,61 @@
 # advent-of-code-go
 
-Resolving all [Advent of Code](https://adventofcode.com/) problems.
+Resolving all [Advent of Code](https://adventofcode.com/) challenges in GO.
 
-### 2015:
+<div align="center">
 
-- Day 1: Not Quite Lisp [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day01.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day01_test.go) ]
-- Day 2: I Was Told There Would Be No Math [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day02.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day02_test.go) ]
-- Day 3: Perfectly Spherical Houses in a Vacuum [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day03.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day03_test.go) ]
-- Day 4: The Ideal Stocking Stuffer [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day04.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day04_test.go) ]
-- Day 5: Doesn't He Have Intern-Elves For This? [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day05.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day05_test.go) ]
-- Day 6: Probably a Fire Hazard [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day06.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day06_test.go) ]
-- Day 7: Some Assembly Required [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day07.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day07_test.go) ]
-- Day 8: Matchsticks [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day08.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day08_test.go) ]
-- Day 9: All in a Single Night [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day09.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day09_test.go) ]
-- Day 10: Elves Look, Elves Say [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day10.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day10_test.go) ]
-- Day 11: Corporate Policy [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day11.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day11_test.go) ]
-- Day 12: JSAbacusFramework.io [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day12.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day12_test.go) ]
-- Day 13: Knights of the Dinner Table [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day13.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day13_test.go) ]
-- Day 14: Reindeer Olympics [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day14.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2015/day14_test.go) ]
+![](https://img.shields.io/badge/2015-14_days-blue)
+![](https://img.shields.io/badge/2016-0_days-red)
+![](https://img.shields.io/badge/2017-0_days-red)
+![](https://img.shields.io/badge/2018-0_days-red)
+![](https://img.shields.io/badge/2019-0_days-red)
+![](https://img.shields.io/badge/2020-0_days-red)
+![](https://img.shields.io/badge/2021-0_days-red)
+![](https://img.shields.io/badge/2022-0_days-red)
+![](https://img.shields.io/badge/2023-14_days-blue)
 
 
-### 2023:
+![](https://img.shields.io/badge/stars%20⭐-56-yellow) 
+![](https://img.shields.io/badge/days%20completed-28-green)
 
-- Day 1: Trebuchet?! [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day01.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day01_test.go) ]
-- Day 2: Cube Conundrum [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day02.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day02_test.go) ]
-- Day 3: Gear Ratios [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day03.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day03_test.go) ]
-- Day 4: Scratchcards [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day04.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day04_test.go) ]
-- Day 5: If You Give A Seed A Fertilizer [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day05.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day05_test.go) ]
-- Day 6: Wait For It [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day06.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day06_test.go) ]
-- Day 7: Camel Cards [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day07_test.go) ]
-- Day 8: Haunted Wasteland [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day08.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day08_test.go) ]
-- Day 9: Mirage Maintenance [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day09_test.go) ]
-- Day 10: Pipe Maze [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day10.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day10_test.go) ]
-- Day 11: Cosmic Expansion [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day11.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day11_test.go) ]
-- Day 12: Hot Springs [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day12.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day12_test.go) ]
-- Day 13: Point of Incidence [ [code](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day13.go) | [test](https://github.com/teodorpopa/advent-of-code-go/blob/main/y2023/day13_test.go) ]
+<img src="./assets/gopher.png" width="170" />
 
-### How to run this:
+</div>
 
-You can run this in interactive mode:
+### Prerequisites
 
-![interactive](https://github.com/teodorpopa/advent-of-code-go/blob/main/assets/interactive.png?raw=true)
+Make sure you have Go >= 1.21.4.
 
-Or using command args:
+### Clone the repository
 
-![interactive](https://github.com/teodorpopa/advent-of-code-go/blob/main/assets/args.png?raw=true)
+```sh
+git clone git@github.com:teodorpopa/advent-of-code-go.git
+```
 
-To run tests recursive: ```make test```
+### Test the solutions
 
-To create a new day from scaffolding:
+To test the solutions for a specific year/day, you need to run the following command:
 
-![create](https://github.com/teodorpopa/advent-of-code-go/blob/main/assets/create.png?raw=true)
+```sh
+make test year=2023 day=01
+```
+
+
+### Compile and run
+
+To run a solution, you need to provide some arguments.
+* the `--year` flag must be set to specify the year of the challenge
+* the `--day` flag must be set to specify which day's solution should run
+* the `--part` flag specifies if you only want to run a specific part. by default both parts will run
+
+make command:
+
+```sh
+make run year=2023 day=13
+```
+
+go command:
+
+```sh
+go run main.go --year=2023 --day=13
+```
