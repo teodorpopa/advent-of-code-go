@@ -17,6 +17,8 @@ Resolving all [Advent of Code](https://adventofcode.com/) challenges in GO.
 
 ![](https://img.shields.io/badge/stars%20⭐-56-yellow) 
 ![](https://img.shields.io/badge/days%20completed-28-green)
+![](https://img.shields.io/github/last-commit/teodorpopa/advent-of-code-go/main)
+
 
 <img src="./assets/gopher.png" width="170" />
 
