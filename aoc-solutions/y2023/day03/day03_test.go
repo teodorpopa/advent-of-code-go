@@ -7,11 +7,11 @@ import (
 )
 
 func TestDay03First(t *testing.T) {
-	r := Day03First(utils.ReadFile("input_test.txt"))
+	r := part1(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, 4361, r)
 }
 
 func TestDay03Second(t *testing.T) {
-	r := Day03Second(utils.ReadFile("input_test.txt"))
+	r := part2(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, 467835, r)
 }

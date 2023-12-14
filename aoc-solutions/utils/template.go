@@ -18,7 +18,7 @@ func CreateFromTemplate(y int, d int) {
 		err := os.MkdirAll(fmt.Sprintf("y%04d/day%02d", y, d), os.ModePerm)
 		Panic(err)
 	} else {
-		color.Printf("\n<err>Path</> <comment>y%04d/day%02d</> <err>already exists</>\n", y, d)
+		color.Printf("\n<err>Path y%04d/day%02d/ already exists</>\n", y, d)
 		return
 	}
 
@@ -35,7 +35,6 @@ func CreateFromTemplate(y int, d int) {
 import (
 	_ "embed"
 	"fmt"
-	"strings"
 )
 
 //go:embed input.txt

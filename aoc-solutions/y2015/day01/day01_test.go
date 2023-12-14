@@ -10,11 +10,11 @@ const d1_1 = 2
 const d1_2 = 11
 
 func TestDay01First(t *testing.T) {
-	r := Day01First(utils.ReadFile("input_test.txt"))
+	r := part1(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, r, d1_1)
 }
 
 func TestDay01Second(t *testing.T) {
-	r := Day01Second(utils.ReadFile("input_test.txt"))
+	r := part2(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, r, d1_2)
 }
