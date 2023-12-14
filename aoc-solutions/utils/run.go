@@ -7,6 +7,10 @@ import (
 
 const TARGET_TIME = 10 * time.Millisecond
 
+func RunYear(year int, day int, parts []int) {
+
+}
+
 func RunDay(days map[int]interface{}, day int, parts []int) {
 	v, ext := days[day]
 	if !ext {
