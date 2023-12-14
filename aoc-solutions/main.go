@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"github.com/gookit/color"
-	"github.com/teodorpopa/advent-of-code-go/runner"
+	"github.com/teodorpopa/advent-of-code-go/run"
 	"github.com/teodorpopa/advent-of-code-go/utils"
 )
 
@@ -32,7 +32,11 @@ func main() {
 	flag.Parse()
 
 	if !validate(year, day, part) {
-		color.Error.Println("Invalid flags")
+		return
+	}
+
+	if create {
+		utils.CreateFromTemplate(year, day)
 		return
 	}
 
@@ -41,20 +45,24 @@ func main() {
 		partsToRun = []int{part}
 	}
 
-	runner.Run(year, day, partsToRun)
+	run.Run(year, day, partsToRun)
 }
 
 func validate(y int, d int, p int) bool {
 	if y == -1 || d == -1 {
+		color.Error.Println("Invalid flags")
 		return false
 	}
 	if y < 2015 || y > 2023 {
+		color.Error.Println("Invalid year to run")
 		return false
 	}
 	if d < 1 || d > 25 {
+		color.Error.Println("Invalid day to run")
 		return false
 	}
 	if p < 0 || p > 2 {
+		color.Error.Println("Invalid part to run")
 		return false
 	}
 

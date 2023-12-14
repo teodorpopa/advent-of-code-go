@@ -1,6 +1,7 @@
-package runner
+package run
 
 import (
+	"github.com/gookit/color"
 	"github.com/teodorpopa/advent-of-code-go/y2015"
 	"github.com/teodorpopa/advent-of-code-go/y2016"
 	"github.com/teodorpopa/advent-of-code-go/y2017"
@@ -13,6 +14,8 @@ import (
 )
 
 func Run(year int, day int, partsToRun []int) bool {
+	color.Cyanf("\nYear: %d \n", year)
+
 	switch year {
 	case 2015:
 		y2015.Run(day, partsToRun)
