@@ -16,6 +16,7 @@ import (
 	"github.com/teodorpopa/advent-of-code-go/y2023/day12"
 	"github.com/teodorpopa/advent-of-code-go/y2023/day13"
 	"github.com/teodorpopa/advent-of-code-go/y2023/day14"
+	"github.com/teodorpopa/advent-of-code-go/y2023/day15"
 )
 
 var days = map[int]interface{}{
@@ -33,6 +34,7 @@ var days = map[int]interface{}{
 	12: day12.Solve,
 	13: day13.Solve,
 	14: day14.Solve,
+	15: day15.Solve,
 }
 
 func Run(day int, parts []int) {
