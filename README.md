@@ -12,11 +12,11 @@ Resolving all [Advent of Code](https://adventofcode.com/) challenges in GO.
 ![](https://img.shields.io/badge/2020-0_days-red)
 ![](https://img.shields.io/badge/2021-0_days-red)
 ![](https://img.shields.io/badge/2022-0_days-red)
-![](https://img.shields.io/badge/2023-14_days-blue)
+![](https://img.shields.io/badge/2023-15_days-blue)
 
 
-![](https://img.shields.io/badge/stars%20⭐-56-yellow) 
-![](https://img.shields.io/badge/days%20completed-28-green)
+![](https://img.shields.io/badge/stars%20⭐-58-yellow) 
+![](https://img.shields.io/badge/days%20completed-29-green)
 ![](https://img.shields.io/github/last-commit/teodorpopa/advent-of-code-go/main)
 
 
