@@ -1,6 +1,9 @@
 package utils
 
-import "strconv"
+import (
+	"math"
+	"strconv"
+)
 
 func ToInt(i string) int {
 	v, _ := strconv.Atoi(i)
@@ -27,4 +30,8 @@ func Min(a, b int) int {
 		return a
 	}
 	return b
+}
+
+func Abs(x int) int {
+	return int(math.Abs(float64(x)))
 }
