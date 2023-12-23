@@ -1,4 +1,4 @@
-package day20
+package day22
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -8,5 +8,10 @@ import (
 
 func TestDayPart1(t *testing.T) {
 	r := part1(utils.ReadFile("input_test.txt"))
-	assert.Equal(t, 32000000, r)
+	assert.Equal(t, 5, r)
+}
+
+func TestDayPart2(t *testing.T) {
+	r := part2(utils.ReadFile("input_test.txt"))
+	assert.Equal(t, 7, r)
 }
