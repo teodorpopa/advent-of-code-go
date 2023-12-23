@@ -27,3 +27,21 @@ func Permutations(arr []interface{}) [][]interface{} {
 	helper(arr, len(arr))
 	return res
 }
+
+func LCM(numbers []int) int {
+	lcm := numbers[0]
+	for i := 0; i < len(numbers); i++ {
+		num1 := lcm
+		num2 := numbers[i]
+		gcd := 1
+		for num2 != 0 {
+			temp := num2
+			num2 = num1 % num2
+			num1 = temp
+		}
+		gcd = num1
+		lcm = (lcm * numbers[i]) / gcd
+	}
+
+	return lcm
+}
