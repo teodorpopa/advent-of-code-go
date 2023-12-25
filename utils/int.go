@@ -3,6 +3,7 @@ package utils
 import (
 	"math"
 	"strconv"
+	"strings"
 )
 
 func ToInt(i string) int {
@@ -13,7 +14,7 @@ func ToInt(i string) int {
 func ToIntSlice(s []string) []int {
 	var res []int
 	for _, v := range s {
-		res = append(res, ToInt(v))
+		res = append(res, ToInt(strings.TrimSpace(v)))
 	}
 	return res
 }
