@@ -6,9 +6,9 @@ import (
 	"strings"
 )
 
-func DisplayTitle(title string) {
-	color.New(color.FgGreen, color.BgCyan).Println(strings.Repeat("=", len(title)))
-	color.New(color.FgBlack, color.BgCyan).Println(title)
-	color.New(color.FgGreen, color.BgCyan).Println(strings.Repeat("=", len(title)))
-	fmt.Println("")
+func DisplayTitle(title string) string {
+	spacer := fmt.Sprintf("%s", color.New(color.FgGreen, color.BgCyan).Sprintf(strings.Repeat("=", len(title))))
+	titleColored := fmt.Sprintf("%s", color.New(color.FgBlack, color.BgCyan).Sprintf(title))
+
+	return fmt.Sprintf("\n%s\n%s\n%s\n", spacer, titleColored, spacer)
 }
