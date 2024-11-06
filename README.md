@@ -34,30 +34,41 @@ Make sure you have Go >= 1.21.4.
 git clone git@github.com:teodorpopa/advent-of-code-go.git
 ```
 
-### Test the solutions
-
-To test the solutions for a specific year/day, you need to run the following command:
+### Scaffold files for a day
 
 ```sh
-make test year=2023 day=01
+make scaffold year=2023 day=01
 ```
 
+### View calendar
+
+```sh
+make calendar year=2023
+```
+
+### View puzzle .md
+
+```sh
+make view year=2023 day=01
+```
 
 ### Compile and run
 
 To run a solution, you need to provide some arguments.
 * the `--year` flag must be set to specify the year of the challenge
 * the `--day` flag must be set to specify which day's solution should run
-* the `--part` flag specifies if you only want to run a specific part. by default both parts will run
+* the `--part` flag specifies if you only want to run a specific part
 
 make command:
 
 ```sh
-make run year=2023 day=13
+make run year=2023 day=01
 ```
 
-go command:
+### Test the solutions
+
+To test the solutions for a specific year/day, you need to run the following command:
 
 ```sh
-go run main.go --year=2023 --day=13
+make test year=2023 day=01
 ```
