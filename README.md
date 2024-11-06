@@ -4,7 +4,7 @@ Resolving all [Advent of Code](https://adventofcode.com/) challenges in GO.
 
 <div align="center">
 
-![](https://img.shields.io/badge/2015-14_days-blue)
+![](https://img.shields.io/badge/2015-16_days-blue)
 ![](https://img.shields.io/badge/2016-0_days-red)
 ![](https://img.shields.io/badge/2017-0_days-red)
 ![](https://img.shields.io/badge/2018-0_days-red)
@@ -14,11 +14,8 @@ Resolving all [Advent of Code](https://adventofcode.com/) challenges in GO.
 ![](https://img.shields.io/badge/2022-0_days-red)
 ![](https://img.shields.io/badge/2023-25_days-blue)
 
-
-![](https://img.shields.io/badge/stars%20⭐-78-yellow) 
-![](https://img.shields.io/badge/days%20completed-39-green)
+![](https://img.shields.io/badge/days%20completed-41-green)
 ![](https://img.shields.io/github/last-commit/teodorpopa/advent-of-code-go/main)
-
 
 <img src="./assets/gopher.png" width="170" />
 
@@ -32,6 +29,14 @@ Make sure you have Go >= 1.21.4.
 
 ```sh
 git clone git@github.com:teodorpopa/advent-of-code-go.git
+```
+
+### Set the AoC cookie value
+
+You can grab the cookie value logging in https://adventofcode.com/ and look at the application cookie named `session`
+
+```sh
+go run main.go credentials --cookie .......
 ```
 
 ### Scaffold files for a day
