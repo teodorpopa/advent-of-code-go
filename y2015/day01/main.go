@@ -4,16 +4,47 @@ import (
 	_ "embed"
 	"flag"
 	"fmt"
+	"strings"
 )
 
 //go:embed input.txt
 var input string
 
 func part1(input string) int {
-	return 0
+	floor := 0
+
+	for _, v := range strings.Split(input, "") {
+		switch v {
+		case "(":
+			floor++
+			break
+		case ")":
+			floor--
+			break
+		}
+	}
+
+	return floor
 }
 
 func part2(input string) int {
+	floor := 0
+
+	for p, v := range strings.Split(input, "") {
+		switch v {
+		case "(":
+			floor++
+			break
+		case ")":
+			floor--
+			break
+		}
+
+		if floor == -1 {
+			return p + 1
+		}
+	}
+
 	return 0
 }
 
