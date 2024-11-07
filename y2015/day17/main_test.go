@@ -6,15 +6,15 @@ import (
 	"testing"
 )
 
-const resultPart1 = 0
-const resultPart2 = 0
+const resultPart1 = 4
+const resultPart2 = 3
 
 func TestDayPart1(t *testing.T) {
-	r := part1(utils.ReadFile("input_test.txt"))
+	r := part1(utils.ReadFile("input_test.txt"), 25)
 	assert.Equal(t, resultPart1, r)
 }
 
 func TestDayPart2(t *testing.T) {
-	r := part2(utils.ReadFile("input_test.txt"))
+	r := part2(utils.ReadFile("input_test.txt"), 25)
 	assert.Equal(t, resultPart2, r)
 }

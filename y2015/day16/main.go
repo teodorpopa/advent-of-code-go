@@ -1,7 +1,8 @@
-package day16
+package main
 
 import (
 	_ "embed"
+	"flag"
 	"fmt"
 	"regexp"
 	"slices"
@@ -96,13 +97,17 @@ func part2(input string) int {
 	return 0
 }
 
-func Solve(part int) int {
+func main() {
+	var part int
+	flag.IntVar(&part, "part", 1, "which part tu run? 1 or 2")
+	flag.Parse()
+
+	res := 0
 	if part == 1 {
-		return part1(input)
-	} else if part == 2 {
-		return part2(input)
+		res = part1(input)
 	} else {
-		fmt.Println("Invalid part to run")
-		return -1
+		res = part2(input)
 	}
+
+	fmt.Println("Result: ", res)
 }
