@@ -1,5 +1,11 @@
 package utils
 
+import (
+	"golang.org/x/exp/rand"
+	"sort"
+	"time"
+)
+
 func Permutations(arr []interface{}) [][]interface{} {
 	var helper func([]interface{}, int)
 	var res [][]interface{}
@@ -44,4 +50,13 @@ func LCM(numbers []int) int {
 	}
 
 	return lcm
+}
+
+var rn = rand.New(rand.NewSource(uint64(time.Now().UnixNano())))
+
+func ShuffleSlice(in []string) []string {
+	sort.Slice(in, func(i, j int) bool {
+		return rn.Intn(2) == 1
+	})
+	return in
 }
