@@ -68,12 +68,13 @@ func validateYear(year int) int {
 
 func validateDay(year int, day int) int {
 	date := currentDate()
+	currentDay := date.Day()
 
 	if year == date.Year() && int(date.Month()) == December {
-		if day > 0 && day <= AocDayEnd {
-			return date.Day()
+		if day > 0 && day <= currentDay && day <= AocDayEnd {
+			return day
 		} else {
-			return AocDayEnd
+			return AocDayStart
 		}
 	} else if year < date.Year() {
 		if day > 0 && day <= AocDayEnd {
