@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"fmt"
 	"math"
 	"strconv"
 	"strings"
@@ -35,4 +36,9 @@ func Min(a, b int) int {
 
 func Abs(x int) int {
 	return int(math.Abs(float64(x)))
+}
+
+func ConcatTwoInt(i1, i2 int) int {
+	num := fmt.Sprintf("%d%d", i1, i2)
+	return ToInt(num)
 }
