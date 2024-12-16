@@ -5,3 +5,12 @@ func CopyIntSlice(orig []int) []int {
 	copy(newNums, orig[:])
 	return newNums
 }
+
+func ValidIndex(x, y, maxX, maxY int) bool {
+	if x < 0 || y < 0 || x >= maxX || y >= maxY {
+		return false
+	}
+
+	return true
+
+}
