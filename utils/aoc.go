@@ -60,3 +60,34 @@ func ShuffleSlice(in []string) []string {
 	})
 	return in
 }
+
+func DFS(grid [][]string, visited [][]bool, i, j int, sides *[][3]int) (int, int) {
+	visited[i][j] = true
+	neighbors := GetNeighbors(i, j)
+	perimeter := 0
+	area := 1
+	for _, n := range neighbors {
+		ni, nj := n[0], n[1]
+		if ni < 0 || ni >= len(grid) || nj < 0 || nj >= len(grid[ni]) || grid[ni][nj] != grid[i][j] {
+			if sides != nil {
+				*sides = append(*sides, [3]int{ni, nj, n[2]})
+			}
+			perimeter++
+		} else if !visited[ni][nj] {
+			a, p := DFS(grid, visited, ni, nj, sides)
+			area += a
+			perimeter += p
+		}
+	}
+
+	return area, perimeter
+}
+
+func GetNeighbors(i, j int) [][3]int {
+	return [][3]int{
+		{i - 1, j, 0},
+		{i + 1, j, 1},
+		{i, j - 1, 2},
+		{i, j + 1, 3},
+	}
+}
