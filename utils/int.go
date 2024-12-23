@@ -12,6 +12,14 @@ func ToInt(i string) int {
 	return v
 }
 
+func ToFloat(i string) float64 {
+	return float64(ToInt(i))
+}
+
+func IsInt(i float64) bool {
+	return i == float64(int(i))
+}
+
 func ToIntSlice(s []string) []int {
 	var res []int
 	for _, v := range s {
