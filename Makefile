@@ -29,7 +29,7 @@ endif
 scaffold:
 ifdef year
 ifdef day
-	@go run main.go scaffold --year=$(year) --day=$(day)
+	@go run main.go scaffold --year=$(year) --day=$(shell echo $(day) | sed 's/^0*//')
 endif
 endif
 
