@@ -7,7 +7,7 @@ import (
 )
 
 const resultPart1 = 50
-const resultPart2 = 0
+const resultPart2 = 24
 
 func TestDayPart1(t *testing.T) {
 	r := part1(utils.ReadFile("input_test.txt"))

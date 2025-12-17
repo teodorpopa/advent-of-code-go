@@ -7,11 +7,11 @@ import (
 	"github.com/teodorpopa/advent-of-code-go/utils"
 )
 
-const resultPart1 = 40
-const resultPart2 = 25272
+const resultPart1 = 7
+const resultPart2 = 33
 
 func TestDayPart1(t *testing.T) {
-	r := part1(utils.ReadFile("input_test.txt"), 10)
+	r := part1(utils.ReadFile("input_test.txt"))
 	assert.Equal(t, resultPart1, r)
 }
 
